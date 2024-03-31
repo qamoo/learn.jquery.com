@@ -21,10 +21,12 @@ This site represents the jQuery Foundation's ongoing effort to consolidate and c
 이 사이트는 jQuery Foundation의 지속적인 노력을 대표하여 이 정보를 통합하고 관리하여 커뮤니티에 필수적인 "서술적 문서"를 제공하고 다음과 같은 목표를 달성합니다:
 
 1. Provide our **users** with a digestible reference on all aspects of using jQuery, from the basics of getting started and performing common tasks to more advanced topics like approaches to structuring code and where jQuery fits into modern web application development.
-2. Provide our **contributors** a central, open place to collaborate and provide a dependable, highly sharable resource that will improve our users' support experiences.
-3. Foster an environment by which users are encouraged to become contributors and build the skills to help them work on jQuery – or any other open source project!
+   **사용자들**에게 jQuery 사용의 모든 측면에 대한 이해하기 쉬운 참고 자료를 제공합니다. 시작하는 기초부터 일반적인 작업 수행 방법, 코드 구조화 방법과 같은 고급 주제, 그리고 jQuery가 현대 웹 애플리케이션 개발에 어떻게 적합한지까지 다룹니다.
+   
+3. Provide our **contributors** a central, open place to collaborate and provide a dependable, highly sharable resource that will improve our users' support experiences.
+4. Foster an environment by which users are encouraged to become contributors and build the skills to help them work on jQuery – or any other open source project!
 
-1. **사용자들**에게 jQuery 사용의 모든 측면에 대한 이해하기 쉬운 참고 자료를 제공합니다. 시작하는 기초부터 일반적인 작업 수행 방법, 코드 구조화 방법과 같은 고급 주제, 그리고 jQuery가 현대 웹 애플리케이션 개발에 어떻게 적합한지까지 다룹니다.
+1. 
 2. **기여자들**에게 중앙에 위치한 개방적인 협업 공간을 제공하여 믿을 수 있고 매우 공유 가능한 자원을 제공하여 사용자들의 지원 경험을 향상시킵니다.
 3. 사용자들이 기여자로 활동하고 jQuery 또는 다른 오픈 소스 프로젝트에 참여하도록 장려하며, 이를 통해 기술을 향상시키고 작업할 수 있는 기술을 갖추도록 환경을 조성합니다!
 

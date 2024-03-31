@@ -39,9 +39,15 @@ In order to achieve these goals, all of [this site's content is maintained publi
 
 The jQuery Learning site has its roots in two primary places.
 
+jQuery Learning 사이트는 두 곳에서 출발했습니다.
+
 The first is Rebecca Murphey's [jQuery Fundamentals](http://jqfundamentals.com/legacy), a free, open source book on jQuery basics she originally released in 2010. Seeking a better home where the information could be both maintained going forward, and consumed in a more piecemeal fashion, Rebecca donated the content to the jQuery Foundation to form the basis of what was then an abstract idea for some sort of "learning center."
 
+첫 번째는 Rebecca Murphey가 2010년에 최초로 출간한 jQuery 기초에 관한 무료 오픈 소스 책인 [jQuery Fundamentals](http://jqfundamentals.com/legacy)입니다. 정보를 계속 유지할 수 있고 조각조각식으로 소비할 수 있는 더 나은 환경을 찾던 중, Rebecca는 정보를 jQuery Foundation에 기부하여 그당시에는 어떤 종류의 "학습 센터"의 추상적인 개념의 기초로 삼게 되었습니다.
+
 The second is [docs.jquery.com](http://docs.jquery.com), that erstwhile chestnut still living out its final days before it will be shut down in early 2013. Since we've moved the API documentation for jQuery Core off that domain, we needed a place that could serve a similar need – documentation (that anyone can contribute to) that gets into the "how-to" and FAQs – without clumsy barriers to entry like finding the right person to set you up with a special wiki account and forcing all authoring into a `<textarea>`.
+
+두 번째는 여전히 마지막 날을 살고 있는 과거의 [docs.jquery.com](http://docs.jquery.com)입니다. 이 도메인은 2013년 초에 폐쇄될 예정입니다. jQuery Core의 API 문서를 해당 도메인에서 제거했으므로, 특정 인물에게 특별한 위키 계정을 설정해 달라고 요청하고 모든 작성을 `<textarea>`로 강제하는 것과 같은 난해한 진입 장벽 없이 누구나 기여할 수 있는 문서(FAQ 및 "어떻게"에 대한 내용)가 필요했습니다.
 
 ## Contributing
 

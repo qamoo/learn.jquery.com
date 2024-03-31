@@ -36,6 +36,8 @@ The `src` attribute in the `<script>` element must point to a copy of jQuery. Do
 
 **Note**: When you download jQuery, the file name may contain a version number, e.g., `jquery-x.y.z.js`. Make sure to either rename this file to `jquery.js` or update the `src` attribute of the `<script>` element to match the file name.
 
+참고: jQuery를 다운로드할 때 파일 이름에 버전 번호가 포함될 수 있습니다. 예를 들어, jquery-x.y.z.js와 같습니다. 이 파일을 jquery.js로 이름을 변경하거나 <script> 요소의 src 속성을 파일 이름과 일치하도록 업데이트해야 합니다.
+
 </div>
 
 ### Launching Code on Document Ready

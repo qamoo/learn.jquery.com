@@ -7,6 +7,8 @@
 
 This is a basic tutorial, designed to help you get started using jQuery. If you don't have a test page setup yet, start by creating the following HTML page:
 
+이것은 jQuery를 사용하여 시작하는 데 도움이 되는 기본 튜토리얼입니다. 아직 테스트 페이지를 설정하지 않았다면, 다음과 같은 HTML 페이지를 만들기로 시작하세요:
+
 ```
 <!doctype html>
 <html>
@@ -27,6 +29,8 @@ This is a basic tutorial, designed to help you get started using jQuery. If you 
 ```
 
 The `src` attribute in the `<script>` element must point to a copy of jQuery. Download a copy of jQuery from the [Downloading jQuery](http://jquery.com/download/) page and store the `jquery.js` file in the same directory as your HTML file.
+
+`<script>` 요소의 `src` 속성은 jQuery의 사본을 가리켜야 합니다. [jQuery 다운로드 페이지](http://jquery.com/download/)에서 jQuery의 사본을 다운로드하여 `jquery.js` 파일을 HTML 파일과 동일한 디렉토리에 저장하십시오.
 
 <div class="warning">
 

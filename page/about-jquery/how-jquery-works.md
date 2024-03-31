@@ -5,8 +5,7 @@
 
 ### jQuery: The Basics
 
-This is a basic tutorial, designed to help you get started using jQuery. If you don't have a test page setup yet, start by creating the following HTML page:
-
+This is a basic tutorial, designed to help you get started using jQuery. If you don't have a test page setup yet, start by creating the following HTML page:  
 이것은 jQuery를 사용하여 시작하는 데 도움이 되는 기본 튜토리얼입니다. 아직 테스트 페이지를 설정하지 않았다면, 다음과 같은 HTML 페이지를 만들기로 시작하세요:
 
 ```

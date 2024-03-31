@@ -52,3 +52,5 @@ The second is [docs.jquery.com](http://docs.jquery.com), that erstwhile chestnut
 ## Contributing
 
 This project wouldn't have been possible without all our [awesome contributors](https://github.com/jquery/learn.jquery.com/graphs/contributors?type=a). If you feel like something on the site is open for improvements, you can contribute [on GitHub](https://github.com/jquery/learn.jquery.com). Feel free to check out [the contributing guide](contributing/) for more in-depth information.
+
+이 프로젝트는 모든 훌륭한 기여자들 없이는 불가능했을 것입니다. 사이트의 내용 중 개선이 필요하다고 생각되는 부분이 있다면 GitHub에서 기여할 수 있습니다. 보다 자세한 정보는 기여 가이드를 확인해 주시기 바랍니다.

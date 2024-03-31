@@ -42,7 +42,9 @@ The `src` attribute in the `<script>` element must point to a copy of jQuery. Do
 
 ### Launching Code on Document Ready 문서 준비 시 코드 실행
 
-To ensure that their code runs after the browser finishes loading the document, many JavaScript programmers wrap their code in an `onload` function:
+To ensure that their code runs after the browser finishes loading the document, many JavaScript programmers wrap their code in an `onload` function: 
+
+브라우저가 문서 로딩을 완료한 후에 코드가 실행되도록 보장하기 위해 많은 JavaScript 프로그래머가 코드를 `onload` 함수로 감싸는 경우가 있습니다:
 
 ```
 window.onload = function() {

@@ -10,9 +10,15 @@
 
 Learning how and when to use jQuery is a different process for each and every web developer, depending largely on experience with the primary tools for front-end development (HTML, CSS, and JavaScript) and knowledge of general programming principles. Over the years developers of all stripes have come to rely on our [API documentation](http://api.jquery.com) for help figuring out how to do exactly what they need to do.
 
+jQuery를 어떻게 사용하고 언제 사용해야 하는지를 학습하는 것은 주로 프런트엔드 개발의 주요 도구(HTML, CSS 및 JavaScript)에 대한 경험과 일반적인 프로그래밍 원칙에 대한 지식에 따라 각 웹 개발자마다 다른 과정입니다. 수년 동안 모든 종류의 개발자들이 필요한 작업을 정확하게 수행하는 방법을 찾는 데 도움을 받기 위해 [API 문서](http://api.jquery.com)를 의존해왔습니다.
+
 However, API documentation alone cannot serve as a guide to solving problems and fostering a true understanding of web development. Over the years, an ecosystem of blog posts, books, support forums, and channels has grown to help cover the **hows** and **whys** of developing with jQuery, as well as explaining best practices, techniques, and workarounds for common problems. This type of documentation has been invaluable resource for millions of people, but the experience of navigating these waters can be frustrating as often as it is fulfilling, as developers struggle to identify trustworthy resources, determine whether what they're reading is actually up to date, and figure out those magical search keywords that are _just right_!
 
+그러나 API 문서만으로는 문제 해결 가이드 및 웹 개발에 대한 실제 이해를 촉진하는 데 도움이 되지 않습니다. 수년 동안 블로그 글, 책, 지원 포럼 및 채널의 생태계가 성장하여 jQuery를 사용하여 개발하는 **어떻게**와 **왜**에 대한 커버리지를 확대했으며, 최상의 사례, 기법 및 일반적인 문제에 대한 해결책을 설명했습니다. 이러한 종류의 문서는 수백만 명에게 농축할 수 없는 자원이 되었지만, 이러한 정보를 찾아내는 과정은 종종 답답함을 초래하기도 합니다. 개발자들이 신뢰할 수 있는 자원을 식별하고, 읽고 있는 정보가 실제로 최신인지 판단하며, _딱 맞는_ 마법의 검색 키워드를 찾아내는 것이 어려운 일이기 때문입니다.
+
 This site represents the jQuery Foundation's ongoing effort to consolidate and curate this information in order to provide this crucial "narrative documentation" to our community and serve the following goals:
+
+이 사이트는 jQuery Foundation의 지속적인 노력을 대표하여 이 정보를 통합하고 관리하여 커뮤니티에 필수적인 "서술적 문서"를 제공하고 다음과 같은 목표를 달성합니다:
 
 1. Provide our **users** with a digestible reference on all aspects of using jQuery, from the basics of getting started and performing common tasks to more advanced topics like approaches to structuring code and where jQuery fits into modern web application development.
 2. Provide our **contributors** a central, open place to collaborate and provide a dependable, highly sharable resource that will improve our users' support experiences.

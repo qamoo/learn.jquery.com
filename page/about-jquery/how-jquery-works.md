@@ -40,7 +40,7 @@ The `src` attribute in the `<script>` element must point to a copy of jQuery. Do
 
 </div>
 
-### Launching Code on Document Ready
+### Launching Code on Document Ready 문서 준비 시 코드 실행
 
 To ensure that their code runs after the browser finishes loading the document, many JavaScript programmers wrap their code in an `onload` function:
 

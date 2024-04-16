@@ -1,6 +1,7 @@
 # The jQuery Learning Site
 
 This site aims to be an authoritative educational resource for those wishing to learn how to use jQuery. From beginners, to more advanced users. It's being driven by the jQuery community.
+이 사이트는 jQuery를 사용하는 방법을 배우고자 하는 사람들을 위한 권위있는 교육 자료로 목표를 하고 있습니다. 초보자부터 더 고급 사용자까지를 대상으로 하며, jQuery 커뮤니티가 주도하고 있습니다.
 
 ## About
 

@@ -6,6 +6,7 @@
 }</script>
 
 Proper use of Ajax-related jQuery methods requires understanding some key concepts first.
+
 Ajax 관련 jQuery 메서드를 올바르게 사용하기 위해서는 먼저 몇 가지 핵심 개념을 이해해야 합니다.
 
 ### GET vs. POST
@@ -31,24 +32,30 @@ jQuery에서 Ajax 요청으로부터 기대하는 데이터 유형에 대한 명
 #### text
 
 For transporting simple strings.
+
 단순 문자열을 전송하는 데 사용합니다.
 
 #### html
 
 For transporting blocks of HTML to be placed on the page.
+
 페이지에 배치될 HTML 블록을 전송하는 데 사용합니다.
 
 #### script
 
 For adding a new script to the page.
+
 페이지에 새 스크립트를 추가하는 데 사용됩니다.
 
 #### json
 
 For transporting JSON-formatted data, which can include strings, arrays, and objects.
+
 문자열, 배열, 그리고 객체를 포함할 수 있는 JSON 형식의 데이터를 전송하는 데 사용됩니다.
 
 **Note:** As of jQuery 1.4, if the JSON data sent by your server isn't properly formatted, the request may fail silently. See [http://json.org](http://json.org) for details on properly formatting JSON, but as a general rule, use built-in language methods for generating JSON on the server to avoid syntax issues.
+
+**참고:** jQuery 1.4부터 서버에서 전송한 JSON 데이터가 올바르게 형식화되지 않으면 요청이 조용히 실패할 수 있습니다. JSON의 올바른 형식에 대한 자세한 내용은 [http://json.org](http://json.org)를 참조하십시오. 그러나 일반적으로 서버에서 JSON을 생성할 때 내장된 언어 메서드를 사용하여 구문 오류를 피하십시오.
 
 #### jsonp
 

@@ -196,31 +196,41 @@ The URL for the request. Required.
 
 #### data
 
-The data to be sent to the server. Optional. This can either be an object or a query string, such as `foo=bar&amp;baz=bim`.
+The data to be sent to the server. Optional. This can either be an object or a query string, such as   
+서버로 전송할 데이터입니다. 선택 사항입니다. 이는 객체 또는 쿼리 문자열일 수 있습니다.   
+`foo=bar&amp;baz=bim`.
 
-**Note:** This option is not valid for `$.getScript`.
+**Note:** This option is not valid for `$.getScript`.   
+**참고:** 이 옵션은 `$.getScript`에 대해 유효하지 않습니다.
 
 #### success callback
 
 A callback function to run if the request succeeds. Optional. The function receives the response data (converted to a JavaScript object if the data type was JSON), as well as the text status of the request and the raw request object.
 
+요청이 성공한 경우 실행할 콜백 함수입니다. 선택 사항입니다. 이 함수는 응답 데이터를 받으며 (`dataType`이 JSON이었을 경우 JavaScript 객체로 변환됨), 요청의 텍스트 상태와 원시 요청 객체도 받습니다.
+
 #### data type
 
-The type of data you expect back from the server. Optional.
+The type of data you expect back from the server. Optional.   
+서버에서 예상되는 데이터 유형입니다. 선택 사항입니다.
 
 **Note:** This option is only applicable for methods that don't already specify the data type in their name.
+**참고:** 이 옵션은 이미 이름에 데이터 유형을 지정하지 않는 메서드에만 적용됩니다.
 
 ```
 // Using jQuery's Ajax convenience methods
+// jQuery의 Ajax 편의 메서드 사용
 
 // Get plain text or HTML
+// 일반 텍스트 또는 HTML 가져오기
 $.get( "/users.php", {
 	userId: 1234
 }, function( resp ) {
 	console.log( resp ); // server response
 });
 
-// Add a script to the page, then run a function defined in it
+// Add a script to the page, then run a function defined in it   
+// 페이지에 스크립트 추가한 다음, 해당 스크립트에 정의된 함수 실행
 $.getScript( "/static/js/myScript.js", function() {
 	functionFromMyScript();
 });

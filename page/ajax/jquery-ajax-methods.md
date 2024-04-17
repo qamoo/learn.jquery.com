@@ -25,14 +25,17 @@ jQuery의 핵심 `$.ajax()` 메서드는 Ajax 요청을 만드는 강력하고 �
 $.ajax({
 
 	// The URL for the request
+	// 요청을 위한 URL
 	url: "post.php",
 
 	// The data to send (will be converted to a query string)
+	// 전송할 데이터 (쿼리 문자열로 변환될 것임)
 	data: {
 		id: 123
 	},
 
 	// Whether this is a POST or GET request
+	// 이것이 POST인지 GET인지 여부
 	type: "GET",
 
 	// The type of data we expect back

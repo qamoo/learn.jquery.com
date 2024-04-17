@@ -7,14 +7,22 @@
 
 While jQuery does offer many Ajax-related convenience methods, the core `$.ajax()` method is at the heart of all of them, and understanding it is imperative. We'll review it first, and then touch briefly on the convenience methods.
 
+jQuery는 많은 Ajax 관련 편의 메서드를 제공하지만, 핵심인 `$.ajax()` 메서드는 그 모든 것의 핵심입니다. 이를 이해하는 것이 매우 중요합니다. 먼저 이를 자세히 살펴보고, 간단히 편의 메서드에 대해 짚어보겠습니다.
+
 It's often considered good practice to use the `$.ajax()` method over the jQuery provided [convenience methods](#convenience-methods). As you'll see, it offers features that the convenience methods do not, and its syntax allows for the ease of readability.
+
+편의 메서드 대신 `$.ajax()` 메서드를 사용하는 것이 좋은 관행으로 여겨집니다. 보다시피 편의 메서드에는 없는 기능을 제공하며, 문법은 가독성을 향상시킵니다.
 
 ### `$.ajax()`
 
 jQuery’s core `$.ajax()` method is a powerful and straightforward way of creating Ajax requests. It takes a configuration object that contains all the instructions jQuery requires to complete the request. The `$.ajax()` method is particularly valuable because it offers the ability to specify both success and failure callbacks. Also, its ability to take a configuration object that can be defined separately makes it easier to write reusable code. For complete documentation of the configuration options, visit [http://api.jquery.com/jQuery.ajax/](http://api.jquery.com/jQuery.ajax/).
 
+jQuery의 핵심 `$.ajax()` 메서드는 Ajax 요청을 만드는 강력하고 직관적인 방법입니다. 이 메서드는 요청을 완료하기 위해 jQuery가 필요로 하는 모든 지시사항을 포함하는 구성 객체를 가져옵니다. `$.ajax()` 메서드는 성공 및 실패 콜백을 지정할 수 있는 능력 때문에 특히 유용합니다. 또한, 구성 객체를 따로 정의할 수 있는 능력은 재사용 가능한 코드를 작성하기 쉽게 만듭니다. 구성 옵션에 대한 완전한 문서는 [http://api.jquery.com/jQuery.ajax/](http://api.jquery.com/jQuery.ajax/)를 참조하십시오.
+
 ```
 // Using the core $.ajax() method
+// 핵심 $.ajax() 메서드 사용
+
 $.ajax({
 
 	// The URL for the request

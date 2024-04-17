@@ -28,13 +28,17 @@ The concept of loose coupling can be especially troublesome to developers making
 
 처음 복잡한 애플리케이션을 다루는 개발자들에게는 느슨한 결합의 개념이 특히 문제가 될 수 있으므로, 시작할 때 이에 유의하세요.
 
-## Encapsulation
+## Encapsulation 캡슐화
 
 The first step to code organization is separating pieces of your application into distinct pieces; sometimes, even just this effort is sufficient to improve the structure of your code and its maintainability.
+
+코드 구조화의 첫 번째 단계는 애플리케이션의 각 부분을 구별 가능한 단위로 분리하는 것입니다. 때로는 이 노력만으로도 코드의 구조와 유지 관리성을 개선하는 데 충분할 수 있습니다.
 
 ### The Object Literal
 
 An object literal is perhaps the simplest way to encapsulate related code. It doesn't offer any privacy for properties or methods, but it's useful for eliminating anonymous functions from your code, centralizing configuration options, and easing the path to reuse and refactoring.
+
+객체 리터럴은 관련된 코드를 캡슐화하는 가장 간단한 방법일 수 있습니다. 이는 속성이나 메서드에 대한 개인 정보를 제공하지 않지만, 코드에서 익명 함수를 제거하고 구성 옵션을 집중화하며, 재사용과 리팩터링을 쉽게할 수 있습니다.
 
 ```
 // An object literal

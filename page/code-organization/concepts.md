@@ -26,6 +26,8 @@ Before we jump into code organization patterns, it's important to understand som
 
 The concept of loose coupling can be especially troublesome to developers making their first foray into complex applications, so be mindful of this as you're getting started.
 
+처음 복잡한 애플리케이션을 다루는 개발자들에게는 느슨한 결합의 개념이 특히 문제가 될 수 있으므로, 시작할 때 이에 유의하세요.
+
 ## Encapsulation
 
 The first step to code organization is separating pieces of your application into distinct pieces; sometimes, even just this effort is sufficient to improve the structure of your code and its maintainability.

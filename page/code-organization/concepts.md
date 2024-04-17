@@ -71,11 +71,17 @@ myFeature.readSettings(); // { foo: "bar" }
 
 The object literal above is simply an object assigned to a variable. The object has one property and several methods. All of the properties and methods are public, so any part of your application can see the properties and call methods on the object. While there is an init method, there's nothing requiring that it be called before the object is functional.
 
+위의 객체 리터럴은 단순히 변수에 할당된 객체입니다. 이 객체에는 한 개의 프로퍼티와 여러 개의 메서드가 있습니다. 모든 프로퍼티와 메서드는 공개되어 있으므로 응용 프로그램의 어떤 부분에서든 프로퍼티를 볼 수 있고 객체의 메서드를 호출할 수 있습니다. 초기화 메서드가 있지만, 해당 메서드를 호출하지 않아도 객체가 동작할 수 있도록 하는 것을 요구하는 것은 없습니다.
+
 How would we apply this pattern to jQuery code? Let's say that we had this code written in the traditional jQuery style:
+
+jQuery 코드에 이 패턴을 적용하려면 다음과 같이 할 수 있습니다. 예를 들어, 전통적인 jQuery 스타일로 작성된 다음 코드가 있다고 가정해봅시다:
 
 ```
 // Clicking on a list item loads some content using the
 // list item's ID, and hides content in sibling list items
+// 목록 항목을 클릭하면 해당 항목의 ID를 사용하여 내용을 로드하고,
+// 형제 목록 항목의 내용을 숨깁니다.
 $( document ).ready(function() {
 	$( "#myFeature li" ).append( "<div>" ).click(function() {
 		var item = $( this );
@@ -90,8 +96,11 @@ $( document ).ready(function() {
 
 If this were the extent of our application, leaving it as-is would be fine. On the other hand, if this was a piece of a larger application, we'd do well to keep this functionality separate from unrelated functionality. We might also want to move the URL out of the code and into a configuration area. Finally, we might want to break up the chain to make it easier to modify pieces of the functionality later.
 
+이것이 응용 프로그램의 전부라면 그대로 두는 것이 괜찮을 것입니다. 그러나 이것이 더 큰 응용 프로그램의 일부인 경우, 이 기능을 관련 없는 기능과 분리하는 것이 좋습니다. 또한 URL을 코드 밖으로 이동하여 구성 영역으로 만들 수도 있습니다. 마지막으로 기능의 일부를 나중에 수정하기 쉽도록 체인을 분해하는 것이 좋을 수 있습니다.
+
 ```
 // Using an object literal for a jQuery feature
+// jQuery 기능에 대한 객체 리터럴 사용
 var myFeature = {
 	init: function( settings ) {
 		myFeature.config = {
@@ -101,6 +110,7 @@ var myFeature = {
 		};
 
 		// Allow overriding the default config
+		// 기본 구성을 재정의할 수 있도록 함
 		$.extend( myFeature.config, settings );
 
 		myFeature.setup();

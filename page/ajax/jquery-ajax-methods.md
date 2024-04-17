@@ -226,7 +226,7 @@ The type of data you expect back from the server. Optional.
 $.get( "/users.php", {
 	userId: 1234
 }, function( resp ) {
-	console.log( resp ); // server response
+	console.log( resp ); // 서버 응답(server response)
 });
 
 // Add a script to the page, then run a function defined in it   
@@ -235,7 +235,8 @@ $.getScript( "/static/js/myScript.js", function() {
 	functionFromMyScript();
 });
 
-// Get JSON-formatted data from the server
+// Get JSON-formatted data from the server   
+// 서버로부터 JSON 형식의 데이터 가져오기
 $.getJSON( "/details.php", function( resp ) {
 
 	// Log each key in the response data
@@ -249,13 +250,17 @@ $.getJSON( "/details.php", function( resp ) {
 
 The `.load()` method is unique among jQuery’s Ajax methods in that it is called on a selection. The `.load()` method fetches HTML from a URL, and uses the returned HTML to populate the selected element(s). In addition to providing a URL to the method, you can optionally provide a selector; jQuery will fetch only the matching content from the returned HTML.
 
+`.load()` 메서드는 jQuery의 Ajax 메서드 중에서도 독특한데, 이 메서드는 선택된 요소에 호출됩니다. `.load()` 메서드는 URL에서 HTML을 가져와서 반환된 HTML을 선택한 요소에 채웁니다. 이 메서드에 URL을 제공하는 것 외에도 선택적으로 셀렉터를 제공할 수 있습니다. jQuery는 반환된 HTML에서 일치하는 콘텐츠만 가져옵니다.
+
 ```
 // Using .load() to populate an element
+// .load()를 사용하여 요소를 채우는 방법
 $( "#newContent" ).load( "/foo.html" );
 ```
 
 ```
-// Using .load() to populate an element based on a selector
+// Using .load() to populate an element based on a selector  
+// 선택기를 기반으로 요소를 채우는 .load() 사용
 $( "#newContent" ).load( "/foo.html #myDiv h1:first", function( html ) {
 	alert( "Content updated!" );
 });

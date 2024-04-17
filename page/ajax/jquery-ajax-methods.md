@@ -115,62 +115,84 @@ The scope in which the callback function(s) should run (i.e. what `this` will me
 
 #### data
 
-The data to be sent to the server. This can either be an object or a query string, such as `foo=bar&amp;baz=bim`.
+The data to be sent to the server. This can either be an object or a query string, such as   
+서버로 보낼 데이터입니다. 이는 객체 또는 쿼리 문자열일 수 있습니다.
+`foo=bar&amp;baz=bim`.
 
 #### dataType
 
 The type of data you expect back from the server. By default, jQuery will look at the MIME type of the response if no `dataType` is specified.
 
+서버에서 기대하는 데이터의 유형입니다. 기본적으로 `dataType`이 지정되지 않은 경우 jQuery는 응답의 MIME 유형을 확인합니다.
+
 #### jsonp
 
-The callback name to send in a query string when making a JSONP request. Defaults to "callback".
-
+The callback name to send in a query string when making a JSONP request. Defaults to "callback".   
+JSONP 요청 시 쿼리 문자열에 보낼 콜백 이름입니다. 기본값은 "callback"입니다.
 
 #### timeout
 
-The time in milliseconds to wait before considering the request a failure.
+The time in milliseconds to wait before considering the request a failure.   
+요청이 실패로 간주되기 전에 기다리는 시간(밀리초 단위)입니다.
+
 
 #### traditional
 
 Set to `true` to use the param serialization style in use prior to jQuery 1.4. For details, see [http://api.jquery.com/jQuery.param/](http://api.jquery.com/jQuery.param/).
 
+jQuery 1.4 이전에 사용된 매개변수 직렬화 스타일을 사용하려면 `true`로 설정하세요. 자세한 내용은 [http://api.jquery.com/jQuery.param/](http://api.jquery.com/jQuery.param/) 를 참조하세요.
+
 #### type
 
 The type of the request, "POST" or "GET". Defaults to "GET". Other request types, such as "PUT" and "DELETE" can be used, but they may not be supported by all browsers.
 
+요청의 유형, "POST" 또는 "GET"입니다. 기본값은 "GET"입니다. "PUT" 및 "DELETE"와 같은 다른 요청 유형을 사용할 수도 있지만, 모든 브라우저에서 지원되지 않을 수 있습니다.
+
 #### url
 
-The URL for the request.
+The URL for the request.   
+요청을 보낼 URL입니다.
 
 The `url` option is the only required property of the `$.ajax()` configuration object; all other properties are optional. This can also be passed as the first argument to `$.ajax()`, and the options object as the second argument.
+
+`url` 옵션은 `$.ajax()` 구성 객체의 유일한 필수 속성입니다. 다른 모든 속성은 선택 사항입니다. 이것은 또한 `$.ajax()`의 첫 번째 인수로 전달될 수 있으며, 옵션 객체는 두 번째 인수로 전달될 수 있습니다.
 
 ### Convenience Methods
 
 If you don't need the extensive configurability of `$.ajax()`, and you don't care about handling errors, the Ajax convenience functions provided by jQuery can be useful, terse ways to accomplish Ajax requests. These methods are just "wrappers" around the core `$.ajax()` method, and simply pre-set some of the options on the `$.ajax()` method.
 
-The convenience methods provided by jQuery are:
+`$.ajax()`의 폭넓은 구성 가능성이 필요하지 않고 오류 처리에 관심이 없다면, jQuery에서 제공하는 Ajax 편의 함수들은 Ajax 요청을 수행하는 간단하고 간결한 방법으로 유용할 수 있습니다. 이러한 메서드들은 핵심 `$.ajax()` 메서드 주위의 "래퍼"일 뿐이며, 단순히 `$.ajax()` 메서드의 일부 옵션을 미리 설정합니다.
+
+The convenience methods provided by jQuery are:   
+jQuery에서 제공하는 편의 메서드는 다음과 같습니다:
 
 #### $.get
 
-Perform a GET request to the provided URL.
+Perform a GET request to the provided URL.   
+제공된 URL로 GET 요청을 수행합니다.
 
 #### $.post
 
-Perform a POST request to the provided URL.
+Perform a POST request to the provided URL.   
+제공된 URL로 POST 요청을 수행합니다.
 
 #### $.getScript
 
-Add a script to the page.
+Add a script to the page.   
+페이지에 스크립트를 추가합니다.
 
 #### $.getJSON
 
-Perform a GET request, and expect JSON to be returned.
+Perform a GET request, and expect JSON to be returned.   
+GET 요청을 수행하고, JSON이 반환될 것으로 예상합니다.
 
-In each case, the methods take the following arguments, in order:
+In each case, the methods take the following arguments, in order:   
+각 경우에 메서드는 순서대로 다음과 같은 인수를 받습니다:
 
 #### url
 
-The URL for the request. Required.
+The URL for the request. Required.   
+요청을 위한 URL입니다. 필수 항목입니다.
 
 #### data
 

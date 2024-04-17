@@ -60,6 +60,7 @@ $.ajax({
     console.dir( xhr );
   })
   // Code to run regardless of success or failure;
+  // 성공 또는 실패 여부에 관계없이 실행할 코드;
   .always(function( xhr, status ) {
     alert( "The request is complete!" );
   });
@@ -68,9 +69,13 @@ $.ajax({
 
 **Note:** Regarding the `dataType` setting, if the server sends back data that is in a different format than you specify, your code may fail, and the reason will not always be clear, because the HTTP response code will not show an error. When working with Ajax requests, make sure your server is sending back the data type you're asking for, and verify that the `Content-type` header is accurate for the data type. For example, for JSON data, the `Content-type` header should be `application/json`.
 
+**참고:** `dataType` 설정에 관련하여, 서버가 지정한 형식과 다른 형식의 데이터를 보내면 코드가 실패할 수 있으며, 그 이유가 항상 명확하지 않을 수 있습니다. 왜냐하면 HTTP 응답 코드에 오류가 표시되지 않을 수 있기 때문입니다. Ajax 요청을 처리할 때 서버가 요청한 데이터 유형을 보내는지 확인하고, `Content-type` 헤더가 데이터 유형에 대해 정확한지 확인하세요. 예를 들어, JSON 데이터의 경우 `Content-type` 헤더는 `application/json`이어야 합니다.
+
 ### `$.ajax()` Options
 
 There are many, many options for the `$.ajax()` method, which is part of its power. For a complete list of options, visit [http://api.jquery.com/jQuery.ajax/](http://api.jquery.com/jQuery.ajax/); here are several that you will use frequently:
+
+$.ajax() 메서드에는 많은 옵션이 있으며, 이것이 그것의 강력함의 일부입니다. 옵션의 완전한 목록은 http://api.jquery.com/jQuery.ajax/를 참조하십시오. 다음은 자주 사용하는 옵션 몇 가지입니다:
 
 #### async
 

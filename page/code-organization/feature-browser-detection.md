@@ -3,19 +3,23 @@
 	"level": "beginner"
 }</script>
 
-### Can I Use This Browser Feature?
+### Can I Use This Browser Feature? 브라우저 기능을 사용할 수 있나요?
 
 There are a couple of common ways to check whether or not a particular feature is supported by a user's browser:
+
+특정 기능이 사용자의 브라우저에서 지원되는지 확인하는 일반적인 방법은 몇 가지 있습니다:
 
 * Browser Detection
 * Specific Feature Detection
 
 In general, we recommend specific feature detection. Let's look at why.
+일반적으로, 우리는 특정 기능 감지를 권장합니다. 그 이유를 살펴보겠습니다.
 
 ### Browser Detection
 
 Browser detection is a method where the browser's User Agent (UA) string is checked for a particular pattern unique to a browser family or version. For example, this is Chrome 39's UA string on Mac OS X Yosemite:
 
+브라우저 감지는 브라우저의 사용자 에이전트(UA) 문자열이 특정 패턴을 가지고 있는지 확인하는 방법입니다. 이 패턴은 특정 브라우저 패밀리나 버전에 고유합니다. 예를 들어, 이것은 맥 OS X Yosemite에서 Chrome 39의 UA 문자열입니다:
 ```
 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36
 ```

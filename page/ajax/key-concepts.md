@@ -90,14 +90,21 @@ $.get( "foo.php", function( response ) {
 });
 ```
 
-### Same-Origin Policy and JSONP
+### Same-Origin Policy and JSONP / 동일 출처 정책과 JSONP
 
 In general, Ajax requests are limited to the same protocol (http or https), the same port, and the same domain as the page making the request. This limitation does not apply to scripts that are loaded via jQuery's Ajax methods. 
 
-Note: Versions of Internet Explorer less than 10 do not support cross-domain AJAX requests. 
+일반적으로, Ajax 요청은 요청을 하는 페이지와 동일한 프로토콜(http 또는 https), 동일한 포트, 그리고 동일한 도메인으로 제한됩니다. 그러나 jQuery의 Ajax 메서드를 통해 로드되는 스크립트에는 이러한 제한이 적용되지 않습니다.
+
+Note: Versions of Internet Explorer less than 10 do not support cross-domain AJAX requests.   
+참고: 10 미만의 버전의 인터넷 익스플로러는 교차 도메인 AJAX 요청을 지원하지 않습니다.
 
 The other exception is requests targeted at a JSONP service on another domain. In the case of JSONP, the provider of the service has agreed to respond to your request with a script that can be loaded into the page using a `<script>` tag, thus avoiding the same-origin limitation; that script will include the data you requested, wrapped in a callback function you provide.
+
+다른 예외는 다른 도메인의 JSONP 서비스에 대한 요청입니다. JSONP의 경우 서비스 제공자는 요청에 대한 응답으로 페이지에 `<script>` 태그를 사용하여 로드할 수 있는 스크립트를 제공합니다. 이를 통해 동일 출처 제한을 피할 수 있습니다. 해당 스크립트에는 요청한 데이터가 제공되는데, 이는 제공한 콜백 함수로 감싸여 있습니다.
 
 ### Ajax and Firebug
 
 Firebug (or the Webkit Inspector in Chrome or Safari) is an invaluable tool for working with Ajax requests. You can see Ajax requests as they happen in the Console tab of Firebug (and in the Resources > XHR panel of Webkit Inspector), and you can click on a request to expand it and see details such as the request headers, response headers, response content, and more. If something isn't going as expected with an Ajax request, this is the first place to look to track down what's wrong.
+
+Firebug(또는 Chrome이나 Safari의 Webkit Inspector)는 Ajax 요청을 처리하는 데 매우 유용한 도구입니다. Firebug의 콘솔 탭(또는 Webkit Inspector의 Resources > XHR 패널)에서 Ajax 요청이 발생하는 것을 실시간으로 볼 수 있으며, 요청을 클릭하여 요청 헤더, 응답 헤더, 응답 내용 등과 같은 세부 정보를 확인할 수 있습니다. Ajax 요청이 예상대로 작동하지 않는 경우에는 문제를 해결하기 위해 처음으로 살펴볼 곳입니다.

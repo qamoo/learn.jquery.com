@@ -6,6 +6,7 @@
 }</script>
 
 When you move beyond adding simple enhancements to your website with jQuery and start developing full-blown client-side applications, you need to consider how to organize your code. In this chapter, we'll take a look at various code organization patterns you can use in your jQuery application and explore the [RequireJS](http://requirejs.org/) dependency management and build system.
+jQuery를 사용하여 웹사이트에 간단한 개선 사항을 추가하는 것을 넘어서면서 완전한 클라이언트 측 애플리케이션을 개발할 때 코드를 구성하는 방법을 고려해야 합니다. 이 장에서는 jQuery 애플리케이션에서 사용할 수 있는 다양한 코드 구성 패턴을 살펴보고 [RequireJS](http://requirejs.org/) 종속성 관리 및 빌드 시스템을 탐구해 보겠습니다.
 
 ## Key Concepts
 

@@ -39,16 +39,20 @@ $.ajax({
 	type: "GET",
 
 	// The type of data we expect back
+	// 우리가 응답받기 기대하는 데이터의 유형
 	dataType : "json",
 })
   // Code to run if the request succeeds (is done);
+  // 요청이 성공했을 때 실행할 코드(완료);
   // The response is passed to the function
+  // 응답이 함수에 전달됩니다.
   .done(function( json ) {
      $( "<h1>" ).text( json.title ).appendTo( "body" );
      $( "<div class=\"content\">").html( json.html ).appendTo( "body" );
   })
   // Code to run if the request fails; the raw request and
   // status codes are passed to the function
+  // 요청이 실패한 경우 실행할 코드; 원본 요청과 상태 코드가 함수에 전달됩니다.
   .fail(function( xhr, status, errorThrown ) {
     alert( "Sorry, there was a problem!" );
     console.log( "Error: " + errorThrown );

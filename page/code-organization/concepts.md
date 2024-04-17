@@ -13,7 +13,10 @@ jQuery를 사용하여 웹사이트에 간단한 개선 사항을 추가하는 �
 
 Before we jump into code organization patterns, it's important to understand some concepts that are common to all good code organization patterns.
 
+코드 구성 패턴으로 넘어가기 전에, 모든 좋은 코드 구성 패턴에 공통적으로 존재하는 몇 가지 개념을 이해하는 것이 중요합니다.
+
 * Your code should be divided into units of functionality — modules, services, etc. Avoid the temptation to have all of your code in one huge `$( document ).ready()` block. This concept, loosely, is known as encapsulation.
+* 코드는 기능 단위로 분할되어야 합니다. 모듈, 서비스 등으로 나뉘어져야 합니다. 모든 코드를 하나의 거대한 `$( document ).ready()` 블록 안에 두는 유혹을 피해야 합니다. 이 개념은 대략적으로 캡슐화로 알려져 있습니다.
 * Don't repeat yourself. Identify similarities among pieces of functionality, and use inheritance techniques to avoid repetitive code.
 * Despite jQuery's DOM-centric nature, JavaScript applications are not all about the DOM. Remember that not all pieces of functionality need to — or should — have a DOM representation.
 * Units of functionality should be [loosely coupled](http://en.wikipedia.org/wiki/Loose_coupling), that is, a unit of functionality should be able to exist on its own, and communication between units should be handled via a messaging system such as custom events or pub/sub. Stay away from direct communication between units of functionality whenever possible.

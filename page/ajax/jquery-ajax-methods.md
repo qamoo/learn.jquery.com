@@ -81,25 +81,37 @@ $.ajax() 메서드에는 많은 옵션이 있으며, 이것이 그것의 강력�
 
 Set to `false` if the request should be sent synchronously. Defaults to `true`. Note that if you set this option to `false`, your request will block execution of other code until the response is received.
 
+옵션을 `false`로 설정하면 요청이 동기적으로 전송되어야 함을 나타냅니다. 기본값은 `true`입니다. 이 옵션을 `false`로 설정하면 요청이 완료될 때까지 다른 코드의 실행이 차단됩니다. 주의하세요.
+
 #### cache
 
 Whether to use a cached response if available. Defaults to `true` for all `dataType`s except "script" and "jsonp". When set to `false`, the URL will simply have a cachebusting parameter appended to it.
+
+응답이 캐시되어 있는 경우 캐시된 응답을 사용할지 여부를 나타냅니다. "script" 및 "jsonp"를 제외한 모든 `dataType`에 대해 기본값은 `true`입니다. `false`로 설정하면 URL에 캐시 버스트 파라미터가 추가됩니다.
 
 #### done
 
 A callback function to run if the request succeeds. The function receives the response data (converted to a JavaScript object if the `dataType` was JSON), as well as the text status of the request and the raw request object.
 
+요청이 성공한 경우 실행할 콜백 함수입니다. 이 함수는 응답 데이터를 받고 (`dataType`이 JSON이었을 경우 JavaScript 객체로 변환됨), 요청의 텍스트 상태 및 원시 요청 객체도 받습니다.
+
 #### fail
 
 A callback function to run if the request results in an error. The function receives the raw request object and the text status of the request.
+
+요청이 오류로 인해 실패한 경우 실행할 콜백 함수입니다. 이 함수는 원시 요청 객체와 요청의 텍스트 상태를 받습니다.
 
 #### always 
 
 A callback function to run when the request is complete, regardless of success or failure. The function receives the raw request object and the text status of the request.
 
+요청이 성공 또는 실패 여부에 관계없이 완료된 후 실행할 콜백 함수입니다. 이 함수는 원시 요청 객체와 요청의 텍스트 상태를 받습니다.
+
 #### context
 
 The scope in which the callback function(s) should run (i.e. what `this` will mean inside the callback function(s)). By default, `this` inside the callback function(s) refers to the object originally passed to `$.ajax()`.
+
+콜백 함수가 실행되는 범위(즉, 콜백 함수 내에서 `this`가 무엇을 의미하는지)입니다. 기본적으로 콜백 함수 내에서 `this`는 원래 `$.ajax()`에 전달된 객체를 가리킵니다.
 
 #### data
 

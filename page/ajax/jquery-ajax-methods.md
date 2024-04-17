@@ -22,7 +22,6 @@ jQuery의 핵심 `$.ajax()` 메서드는 Ajax 요청을 만드는 강력하고 �
 ```
 // Using the core $.ajax() method
 // 핵심 $.ajax() 메서드 사용
-
 $.ajax({
 
 	// The URL for the request

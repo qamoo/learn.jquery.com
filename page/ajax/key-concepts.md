@@ -5,9 +5,8 @@
 	"attribution": [ "jQuery Fundamentals" ]
 }</script>
 
-Proper use of Ajax-related jQuery methods requires understanding some key concepts first.
-
-Ajax 관련 jQuery 메서드를 올바르게 사용하기 위해서는 먼저 몇 가지 핵심 개념을 이해해야 합니다.
+Proper use of Ajax-related jQuery methods requires understanding some key concepts first.   
+Ajax 관련 jQuery 메서드를 올바르게 사용하기 위해서는 먼저 몇 가지 핵심 개념을 이해해야 합니다.  
 
 ### GET vs. POST
 
@@ -31,26 +30,22 @@ jQuery에서 Ajax 요청으로부터 기대하는 데이터 유형에 대한 명
 
 #### text
 
-For transporting simple strings.
-
+For transporting simple strings.   
 단순 문자열을 전송하는 데 사용합니다.
 
 #### html
 
-For transporting blocks of HTML to be placed on the page.
-
+For transporting blocks of HTML to be placed on the page.   
 페이지에 배치될 HTML 블록을 전송하는 데 사용합니다.
 
 #### script
 
-For adding a new script to the page.
-
+For adding a new script to the page.   
 페이지에 새 스크립트를 추가하는 데 사용됩니다.
 
 #### json
 
-For transporting JSON-formatted data, which can include strings, arrays, and objects.
-
+For transporting JSON-formatted data, which can include strings, arrays, and objects.   
 문자열, 배열, 그리고 객체를 포함할 수 있는 JSON 형식의 데이터를 전송하는 데 사용됩니다.
 
 **Note:** As of jQuery 1.4, if the JSON data sent by your server isn't properly formatted, the request may fail silently. See [http://json.org](http://json.org) for details on properly formatting JSON, but as a general rule, use built-in language methods for generating JSON on the server to avoid syntax issues.
@@ -59,17 +54,22 @@ For transporting JSON-formatted data, which can include strings, arrays, and obj
 
 #### jsonp
 
-For transporting JSON data from another domain.
+For transporting JSON data from another domain.   
+다른 도메인에서 JSON 데이터를 전송하기 위해 사용됩니다.
 
 #### xml
 
-For transporting data in a custom XML schema.
+For transporting data in a custom XML schema.   
+사용자 정의 XML 스키마로 데이터를 전송하는 데 사용됩니다.
 
-Consider using the JSON format in most cases, as it provides the most flexibility. It is especially useful for sending both HTML and data at the same time.
+Consider using the JSON format in most cases, as it provides the most flexibility. It is especially useful for sending both HTML and data at the same time.   
+대부분의 경우 JSON 형식을 사용하는 것이 가장 유연합니다. 특히 HTML과 데이터를 동시에 전송해야 할 때 유용합니다.
 
-### A is for Asynchronous
+### A is for Asynchronous / A는 비동기(Asynchronous)를 나타냅니다.
 
 The asynchronicity of Ajax catches many new jQuery users off guard. Because Ajax calls are asynchronous by default, the response is not immediately available. Responses can only be handled using a callback. So, for example, the following code will not work:
+
+Ajax의 비동기성은 많은 새로운 jQuery 사용자들을 놀라게 합니다. Ajax 호출은 기본적으로 비동기적이기 때문에 응답이 즉시 사용할 수 없습니다. 응답은 콜백을 사용해서만 처리할 수 있습니다. 예를 들어, 다음 코드는 작동하지 않습니다:
 
 ```
 var response;
@@ -83,6 +83,7 @@ console.log( response ); // undefined
 
 Instead, we need to pass a callback function to our request; this callback will run when the request succeeds, at which point we can access the data that it returned, if any.
 
+대신, 요청에 콜백 함수를 전달해야 합니다. 이 콜백은 요청이 성공한 경우에 실행되며, 그때 반환된 데이터에 접근할 수 있습니다.
 ```
 $.get( "foo.php", function( response ) {
 	console.log( response ); // server response

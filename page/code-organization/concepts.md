@@ -18,8 +18,11 @@ Before we jump into code organization patterns, it's important to understand som
 * Your code should be divided into units of functionality — modules, services, etc. Avoid the temptation to have all of your code in one huge `$( document ).ready()` block. This concept, loosely, is known as encapsulation.
 * 코드는 기능 단위로 분할되어야 합니다. 모듈, 서비스 등으로 나뉘어져야 합니다. 모든 코드를 하나의 거대한 `$( document ).ready()` 블록 안에 두는 유혹을 피해야 합니다. 이 개념은 대략적으로 캡슐화로 알려져 있습니다.
 * Don't repeat yourself. Identify similarities among pieces of functionality, and use inheritance techniques to avoid repetitive code.
+* * 반복하지 마세요. 기능들 사이의 유사점을 파악하고 반복적인 코드를 피하기 위해 상속 기법을 사용하세요.
 * Despite jQuery's DOM-centric nature, JavaScript applications are not all about the DOM. Remember that not all pieces of functionality need to — or should — have a DOM representation.
+* jQuery는 DOM 중심적인 성격을 가지고 있지만, JavaScript 애플리케이션은 모두 DOM에 관한 것은 아닙니다. 모든 기능 단위가 DOM 표현을 가져야 하는 것은 아니며, 실제로 그렇게 해야 하는 경우도 아닙니다.
 * Units of functionality should be [loosely coupled](http://en.wikipedia.org/wiki/Loose_coupling), that is, a unit of functionality should be able to exist on its own, and communication between units should be handled via a messaging system such as custom events or pub/sub. Stay away from direct communication between units of functionality whenever possible.
+* 기능 단위는 [느슨하게 결합]되어야 합니다. 즉, 기능 단위는 독립적으로 존재할 수 있어야 하며, 기능 단위 간의 통신은 사용자 지정 이벤트나 pub/sub와 같은 메시징 시스템을 통해 처리되어야 합니다. 가능한 경우 기능 단위 간의 직접적인 통신을 피하십시오.
 
 The concept of loose coupling can be especially troublesome to developers making their first foray into complex applications, so be mindful of this as you're getting started.
 

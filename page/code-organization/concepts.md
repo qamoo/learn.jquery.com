@@ -161,17 +161,26 @@ $( document ).ready( myFeature.init );
 
 The first thing you'll notice is that this approach is obviously far longer than the original — again, if this were the extent of our application, using an object literal would likely be overkill. Assuming it's not the extent of our application, though, we've gained several things:
 
-* We've broken our feature up into tiny methods. In the future, if we want to change how content is shown, it's clear where to change it. In the original code, this step is much harder to locate.
+가장 먼저 이 접근 방식이 원래 코드보다 분명히 길다는 것을 알 수 있습니다. 다시 말해서, 이것이 응용 프로그램의 전부라면 객체 리터럴을 사용하는 것은 과도할 수 있습니다. 그러나 응용 프로그램의 전부가 아닌 경우에는 여러 가지 이점을 얻게 됩니다.
+
+* We've broken our feature up into tiny methods. In the future, if we want to change how content is shown, it's clear where to change it. In the original code, this step is much harder to locate.*
+* 우리는 기능을 작은 메서드로 분리했습니다. 나중에 내용을 표시하는 방법을 변경하려면 어디를 수정해야 할지 명확합니다. 원본 코드에서는 이 단계를 찾기가 훨씬 어렵습니다.
 * We've eliminated the use of anonymous functions.
+* 익명 함수의 사용을 없앴습니다.
 * We've moved configuration options out of the body of the code and put them in a central location.
+* 우리는 설정 옵션을 코드 본문에서 분리하여 중앙 위치에 배치했습니다.
 * We've eliminated the constraints of the chain, making the code easier to refactor, remix, and rearrange.
+* 우리는 체인의 제약을 제거하여 코드를 리팩토링, 재구성 및 재배치하기 쉽게 만들었습니다.
 
 For non-trivial features, object literals are a clear improvement over a long stretch of code stuffed in a `$( document ).ready()` block, as they get us thinking about the pieces of our functionality. However, they aren't a whole lot more advanced than simply having a bunch of function declarations inside of that `$( document ).ready()` block.
 
-### The Module Pattern
+비단순한 기능에 대해서는 객체 리터럴은 기능을 하나의 `$( document ).ready()` 블록에 몰아 넣는 것보다 명확한 개선입니다. 왜냐하면 이를 통해 기능의 부분들을 고려하게 되기 때문입니다. 그러나 이것은 단순히 `$( document ).ready()` 블록 내에 함수 선언을 두는 것보다는 그렇게 많이 발전한 것은 아닙니다.
+
+### The Module Pattern 모듈 패턴
 
 The module pattern overcomes some of the limitations of the object literal, offering privacy for variables and functions while exposing a public API if desired.
 
+모듈 패턴은 객체 리터럴의 일부 제약을 극복하며, 필요에 따라 변수와 함수에 대한 개인 정보를 제공하면서 공개 API를 노출합니다.
 ```
 // The module pattern
 var feature = (function() {
@@ -204,9 +213,15 @@ feature.sayPrivateThing();
 
 In the example above, we self-execute an anonymous function that returns an object. Inside of the function, we define some variables. Because the variables are defined inside of the function, we don't have access to them outside of the function unless we put them in the return object. This means that no code outside of the function has access to the `privateThing` variable or to the `changePrivateThing` function. However, `sayPrivateThing` does have access to `privateThing` and `changePrivateThing`, because both were defined in the same scope as `sayPrivateThing`.
 
+위의 예에서 익명 함수를 자체 실행하여 객체를 반환합니다. 함수 내부에서 몇 가지 변수를 정의합니다. 이러한 변수들은 함수 내에서 정의되었으므로, 함수 외부에서는 해당 변수에 액세스할 수 없습니다. 이 변수들을 반환 객체에 넣지 않는 한. 이는 함수 외부의 코드가 `privateThing` 변수나 `changePrivateThing` 함수에 액세스할 수 없음을 의미합니다. 그러나 `sayPrivateThing` 함수는 `privateThing` 및 `changePrivateThing`에 액세스할 수 있습니다. 왜냐하면 둘 다 `sayPrivateThing`와 동일한 스코프에서 정의되었기 때문입니다.
+
 This pattern is powerful because, as you can gather from the variable names, it can give you private variables and functions while exposing a limited API consisting of the returned object's properties and methods.
 
+이 패턴은 강력합니다. 변수 이름에서 알 수 있듯이, 이 패턴은 반환된 객체의 속성과 메서드로 구성된 제한된 API를 노출함으로써 개인 변수와 함수를 제공할 수 있습니다.
+
 Below is a revised version of the previous example, showing how we could create the same feature using the module pattern while only exposing one public method of the module, `showItemByIndex()`.
+
+이전 예제의 수정된 버전은 모듈 패턴을 사용하여 동일한 기능을 만들 수 있는 방법을 보여줍니다. 모듈의 단일 공개 메서드인 `showItemByIndex()`만 노출됩니다.
 
 ```
 // Using the module pattern for a jQuery feature

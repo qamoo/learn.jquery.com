@@ -6,34 +6,47 @@
 }</script>
 
 Proper use of Ajax-related jQuery methods requires understanding some key concepts first.
+Ajax 관련 jQuery 메서드를 올바르게 사용하기 위해서는 먼저 몇 가지 핵심 개념을 이해해야 합니다.
 
 ### GET vs. POST
 
 The two most common "methods" for sending a request to a server are GET and POST. It's important to understand the proper application of each.
 
+서버로 요청을 보내는 가장 일반적인 두 가지 "메서드"는 GET과 POST입니다. 각각의 올바른 적용을 이해하는 것이 중요합니다.
+
 The GET method should be used for non-destructive operations — that is, operations where you are only "getting" data from the server, not changing data on the server. For example, a query to a search service might be a GET request. GET requests may be cached by the browser, which can lead to unpredictable behavior if you are not expecting it. GET requests generally send all of their data in a query string.
 
+GET 메서드는 비파괴적 작업에 사용되어야 합니다. 즉, 서버의 데이터를 변경하지 않고 단순히 데이터를 "가져오는" 작업에 사용됩니다. 예를 들어, 검색 서비스에 대한 쿼리는 GET 요청일 수 있습니다. GET 요청은 브라우저에 의해 캐시될 수 있으며, 이는 예상하지 않은 동작을 유발할 수 있습니다. GET 요청은 일반적으로 쿼리 문자열에 모든 데이터를 보냅니다.
+
 The POST method should be used for destructive operations — that is, operations where you are changing data on the server. For example, a user saving a blog post should be a POST request. POST requests are generally not cached by the browser; a query string can be part of the URL, but the data tends to be sent separately as post data.
+
+POST 메서드는 파괴적 작업에 사용되어야 합니다. 즉, 서버의 데이터를 변경하는 작업에 사용됩니다. 예를 들어, 사용자가 블로그 글을 저장하는 경우 POST 요청이어야 합니다. POST 요청은 일반적으로 브라우저에 의해 캐시되지 않습니다. 쿼리 문자열은 URL의 일부가 될 수 있지만, 데이터는 일반적으로 별도의 POST 데이터로 전송됩니다.
 
 ### Data Types
 
 jQuery generally requires some instruction as to the type of data you expect to get back from an Ajax request; in some cases the data type is specified by the method name, and in other cases it is provided as part of a configuration object. There are several options:
 
+jQuery에서 Ajax 요청으로부터 기대하는 데이터 유형에 대한 명시적인 지시가 필요합니다. 때로는 데이터 유형이 메서드 이름으로 지정되며, 다른 경우에는 구성 객체의 일부로 제공됩니다. 여러 옵션이 있습니다:
+
 #### text
 
 For transporting simple strings.
+단순 문자열을 전송하는 데 사용합니다.
 
 #### html
 
 For transporting blocks of HTML to be placed on the page.
+페이지에 배치될 HTML 블록을 전송하는 데 사용합니다.
 
 #### script
 
 For adding a new script to the page.
+페이지에 새 스크립트를 추가하는 데 사용됩니다.
 
 #### json
 
 For transporting JSON-formatted data, which can include strings, arrays, and objects.
+문자열, 배열, 그리고 객체를 포함할 수 있는 JSON 형식의 데이터를 전송하는 데 사용됩니다.
 
 **Note:** As of jQuery 1.4, if the JSON data sent by your server isn't properly formatted, the request may fail silently. See [http://json.org](http://json.org) for details on properly formatting JSON, but as a general rule, use built-in language methods for generating JSON on the server to avoid syntax issues.
 
